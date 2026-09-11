@@ -49,7 +49,7 @@ export const App: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-slate-900 flex flex-col selection:bg-cyan-500 selection:text-white">
+    <div className="min-h-screen bg-[#F8FAFC] text-slate-900 flex flex-col selection:bg-cyan-500 selection:text-white overflow-x-hidden w-full max-w-full">
       {/* Top sticky navigation */}
       <Navbar
         onOpenBooking={() => handleOpenBooking()}
@@ -58,7 +58,7 @@ export const App: React.FC = () => {
       />
 
       {/* Main Page Layout */}
-      <main className="flex-1">
+      <main className="flex-1 w-full max-w-full overflow-x-hidden">
         {/* 1. Hero Section */}
         <HeroSection
           onOpenBooking={() => handleOpenBooking()}
